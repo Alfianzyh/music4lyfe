@@ -1,1 +1,1 @@
-content: ["./index.html", "./src/**/*.{js,jsx}"]
+content: ["./index.css", "./src/**/*.{js,jsx}"]
