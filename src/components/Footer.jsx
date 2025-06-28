@@ -26,7 +26,7 @@ const Footer = () => {
           <div className="flex items-center gap-2 mb-1">
             <Logo size={8} textSize="text-2xl" />
           </div>
-          <p className="text-white/70 text-base">Experience music through glass.</p>
+          <p className="text-white/70 text-base">Enjoy the beat, Live the moment</p>
           {/* Optional icons can be added here */}
             <SocialIcons />
         </div>
@@ -47,7 +47,7 @@ const Footer = () => {
       </div>
 
       {/* Copyright */}
-      <div className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-white/50">
+      <div className="mt-11 -mb-7 border-t border-white/10 pt-6 text-center text-sm text-white/50">
         © 2025 Music4Lyfe. All rights reserved.
       </div>
     </footer>
