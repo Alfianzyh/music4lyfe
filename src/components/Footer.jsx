@@ -1,30 +1,57 @@
-// src/components/Footer.jsx
+import React from "react";
 import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
+  const linkSections = [
+    {
+      title: "Company",
+      links: ["About", "Jobs", "For the Record", "Partners", "Newsroom"],
+    },
+    {
+      title: "Communities",
+      links: ["For Artists", "Developers", "Advertising", "Investors", "Vendors"],
+    },
+    {
+      title: "Useful Links",
+      links: ["Support", "Web Player", "Free Mobile App", "Privacy Policy", "Terms & Conditions"],
+    },
+  ];
+
   return (
-    <footer className="bg-white/10 backdrop-blur-md border-t border-white/20 py-8 mt-20 text-white">
-      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
-        <h3 className="text-xl font-bold">Music4Lyfe</h3>
-
-        <nav className="flex space-x-6 text-sm">
-          <a href="#home" className="hover:text-purple-400">Home</a>
-          <a href="#features" className="hover:text-purple-400">Features</a>
-          <a href="#download" className="hover:text-purple-400">Download</a>
-        </nav>
-
-        <div className="flex space-x-4 text-xl">
-          <a href="#" className="hover:text-purple-400"><FaGithub /></a>
-          <a href="#" className="hover:text-purple-400"><FaLinkedinIn /></a>
-          <a href="#" className="hover:text-purple-400"><FaInstagram /></a>
+    <footer className="border-t border-white/10 py-12 px-6 bg-black/0">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+        {/* Logo + Description */}
+        <div>
+          <div className="flex items-center gap-2 mb-4">
+            <div className="w-6 h-6 bg-purple-400 rounded-sm" />
+            <h2 className="text-white text-2xl font-bold">GlassBeats</h2>
+          </div>
+          <p className="text-white/70 text-base">Experience music through glass.</p>
+          {/* Optional icons can be added here */}
         </div>
+
+        {/* Link Sections */}
+        {linkSections.map((section, idx) => (
+          <div key={idx}>
+            <h3 className="text-white font-semibold mb-4">{section.title}</h3>
+            <ul className="space-y-2">
+              {section.links.map((link, i) => (
+                <li key={i} className="text-white/70 hover:text-white transition text-base">
+                  {link}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
       </div>
 
-      <p className="text-center text-xs text-gray-400 mt-6">
-        © {new Date().getFullYear()} Music4Lyfe. All rights reserved.
-      </p>
+      {/* Copyright */}
+      <div className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-white/50">
+        © 2023 GlassBeats. All rights reserved.
+      </div>
     </footer>
   );
 };
 
 export default Footer;
+
