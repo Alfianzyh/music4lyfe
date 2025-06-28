@@ -12,7 +12,14 @@ import DiscoverSection from "./components/DiscoverSection";
 function App() {
   return (
     <div className="bg-gradient-to-r from-purple-900 via-blue-900 to-black border-gray-200 font-Poppins">
-      <Navbar />
+      <Navbar
+        menuItems={[
+          { id: "featuressection", label: "Features" },
+          { id: "discover", label: "Discover" },
+          { id: "pricing", label: "Pricing" },
+          { id: "download", label: "Download" },
+        ]}
+      />     
       <main className="pt-20">
         <HeroSection />
         <FeaturesSection />

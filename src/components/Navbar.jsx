@@ -1,11 +1,11 @@
 import React from "react";
 import Logo from "./Logo";
 
-const Navbar = () => {
+const Navbar = ({ menuItems }) => {
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
     if (el) {
-      const yOffset = -80; // offset untuk tinggi navbar
+      const yOffset = -80; // offset agar tidak tertutup navbar
       const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
@@ -17,32 +17,17 @@ const Navbar = () => {
         {/* Reusable Logo */}
         <Logo size={8} textSize="text-2xl" />
 
-        {/* Menu */}
+        {/* Dynamic Menu */}
         <nav className="hidden md:flex space-x-8">
-          <button
-            onClick={() => scrollToSection("featuressection")}
-            className="text-white/80 text-base hover:text-white transition"
-          >
-            Features
-          </button>
-          <button
-            onClick={() => scrollToSection("discover")}
-            className="text-white/80 text-base hover:text-white transition"
-          >
-            Discover
-          </button>
-          <button
-            onClick={() => scrollToSection("pricing")}
-            className="text-white/80 text-base hover:text-white transition"
-          >
-            Pricing
-          </button>
-          <button
-            onClick={() => scrollToSection("download")}
-            className="text-white/80 text-base hover:text-white transition"
-          >
-            Download
-          </button>
+          {menuItems.map((item) => (
+            <button
+              key={item.id}
+              onClick={() => scrollToSection(item.id)}
+              className="text-white/80 text-base hover:text-white transition"
+            >
+              {item.label}
+            </button>
+          ))}
         </nav>
 
         {/* Auth Buttons */}
