@@ -6,7 +6,7 @@ import Footer from "./components/Footer";
 
 function App() {
   return (
-    <div className="bg-black text-white font-sans">
+    <div className=" bg-gradient-to-r from-purple-900 via-blue-900 to-black border-gray-200 font-Poppins">
       <Navbar />
       <main className="pt-20">
         <Hero />
