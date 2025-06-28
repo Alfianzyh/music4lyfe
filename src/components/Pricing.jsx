@@ -29,7 +29,7 @@ const Pricing = () => {
   ];
 
   return (
-    <section className="py-20 px-6 bg-transparent">
+    <section id="pricing" className="py-20 px-6 bg-transparent">
       <div className="max-w-6xl mx-auto flex flex-col lg:flex-row gap-12">
         <div className="flex-1 space-y-6">
           <h2 className="text-4xl font-bold text-white">Upgrade to Premium</h2>
