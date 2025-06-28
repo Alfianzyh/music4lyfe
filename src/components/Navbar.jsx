@@ -18,12 +18,12 @@ const Navbar = ({ menuItems }) => {
         <Logo size={8} textSize="text-2xl" />
 
         {/* Dynamic Menu */}
-        <nav className="hidden md:flex space-x-9 mr-7">
+        <nav className="hidden md:flex space-x-9 ml-2">
           {menuItems.map((item) => (
             <button
               key={item.id}
               onClick={() => scrollToSection(item.id)}
-              className="text-white/80 text-base hover:text-white transition"
+              className="text-white/80 text-medium font-medium hover:text-white transition"
             >
               {item.label}
             </button>
