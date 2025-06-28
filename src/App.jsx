@@ -7,6 +7,7 @@ import Logo from "./components/Logo";
 import DownloadSection from "./components/DownloadSection";
 import HeroSection from "./components/HeroSection";
 import FeaturesSection from "./components/FeatureSection";
+import DiscoverSection from "./components/DiscoverSection";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <main className="pt-20">
         <HeroSection />
         <FeaturesSection />
+        <DiscoverSection />
         <Pricing />
         <DownloadSection />
       </main>
