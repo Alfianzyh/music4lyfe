@@ -48,7 +48,7 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-white/50">
-        © 2023 GlassBeats. All rights reserved.
+        © 2025 Music4Lyfe. All rights reserved.
       </div>
     </footer>
   );
