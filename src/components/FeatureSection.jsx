@@ -4,7 +4,7 @@ import { FaHeadphonesAlt, FaCompactDisc, FaRobot, FaCloudDownloadAlt, FaShareAlt
 
 const FeatureSection = () => {
   return (
-    <section className="bg-gradient-to-r from-purple-900 via-blue-900 to-black border-gray-200 text-white py-20 px-6">
+    <section id="featuressection"  className="min-h-screen bg-gradient-to-r from-purple-900 via-blue-900 to-black border-gray-200 text-white py-12 px-6">
       <div className="max-w-6xl mx-auto text-center space-y-4">
         <h2 className="text-4xl font-bold">Why Choose Music4Lyfe?</h2>
         <p className="text-white/70 text-xl max-w-3xl mx-auto">

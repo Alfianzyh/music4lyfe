@@ -2,6 +2,15 @@ import React from "react";
 import Logo from "./Logo";
 
 const Navbar = () => {
+  const scrollToSection = (id) => {
+    const el = document.getElementById(id);
+    if (el) {
+      const yOffset = -80; // offset untuk tinggi navbar
+      const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
   return (
     <header className="w-full px-6 py-4 fixed top-0 left-0 z-50 bg-black/25 backdrop-blur-md border-b border-white/10">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
@@ -10,10 +19,30 @@ const Navbar = () => {
 
         {/* Menu */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#featuressection" className="text-white/80 text-base hover:text-white transition">Features</a>
-          <a href="#discover" className="text-white/80 text-base hover:text-white transition">Discover</a>
-          <a href="#pricing" className="text-white/80 text-base hover:text-white transition">Pricing</a>
-          <a href="#download" className="text-white/80 text-base hover:text-white transition">Download</a>
+          <button
+            onClick={() => scrollToSection("featuressection")}
+            className="text-white/80 text-base hover:text-white transition"
+          >
+            Features
+          </button>
+          <button
+            onClick={() => scrollToSection("discover")}
+            className="text-white/80 text-base hover:text-white transition"
+          >
+            Discover
+          </button>
+          <button
+            onClick={() => scrollToSection("pricing")}
+            className="text-white/80 text-base hover:text-white transition"
+          >
+            Pricing
+          </button>
+          <button
+            onClick={() => scrollToSection("download")}
+            className="text-white/80 text-base hover:text-white transition"
+          >
+            Download
+          </button>
         </nav>
 
         {/* Auth Buttons */}
