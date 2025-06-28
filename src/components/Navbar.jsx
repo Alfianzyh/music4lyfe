@@ -18,7 +18,7 @@ const Navbar = ({ menuItems }) => {
         <Logo size={8} textSize="text-2xl" />
 
         {/* Dynamic Menu */}
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-9 mr-7">
           {menuItems.map((item) => (
             <button
               key={item.id}

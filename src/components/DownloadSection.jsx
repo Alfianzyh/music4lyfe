@@ -13,7 +13,7 @@ const DownloadSection = () => {
         {/* Left: Text + Buttons */}
         <div className="max-w-xl space-y-6">
           <h2 className="text-4xl font-bold text-white font-poppins">
-            Download GlassBeats
+            Download Music4Lyfe
           </h2>
           <p className="text-white/70">
             Take your music everywhere with our mobile and desktop apps.
@@ -31,7 +31,7 @@ const DownloadSection = () => {
         <div className="relative mt-10 md:mt-0 md:ml-10">
           <div className="relative w-64 h-64">
             <img
-              src="https://placehold.co/256x256"
+              src="/public/DownloadSection.png"
               alt="App Mockup"
               className="w-64 h-64 rounded-xl relative z-10"
             />
