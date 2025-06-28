@@ -1,8 +1,9 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
-import CTASection from "./components/CTASection";
+import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
+import Logo from "./components/Logo";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
       <main className="pt-20">
         <Hero />
         <Features />
-        <CTASection />
+        <Pricing />
       </main>
       <Footer />
     </div>
