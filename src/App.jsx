@@ -1,11 +1,12 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/HeroSection";
-import Features from "./components/Features";
+import Features from "./components/FeatureSection";
 import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 import Logo from "./components/Logo";
 import DownloadSection from "./components/DownloadSection";
 import HeroSection from "./components/HeroSection";
+import FeaturesSection from "./components/FeatureSection";
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
       <Navbar />
       <main className="pt-20">
         <HeroSection />
-        <Features />
+        <FeaturesSection />
         <Pricing />
         <DownloadSection />
       </main>

@@ -10,9 +10,9 @@ const Navbar = () => {
 
         {/* Menu */}
         <nav className="hidden md:flex space-x-8">
-          <a href="#features" className="text-white/80 text-base hover:text-white transition">Features</a>
+          <a href="#featuressection" className="text-white/80 text-base hover:text-white transition">Features</a>
           <a href="#discover" className="text-white/80 text-base hover:text-white transition">Discover</a>
-          <a href="#premium" className="text-white/80 text-base hover:text-white transition">Premium</a>
+          <a href="#pricing" className="text-white/80 text-base hover:text-white transition">Pricing</a>
           <a href="#download" className="text-white/80 text-base hover:text-white transition">Download</a>
         </nav>
 
