@@ -1,5 +1,5 @@
 // src/components/Footer.jsx
-import { FaGithub, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -15,7 +15,7 @@ const Footer = () => {
 
         <div className="flex space-x-4 text-xl">
           <a href="#" className="hover:text-purple-400"><FaGithub /></a>
-          <a href="#" className="hover:text-purple-400"><FaTwitter /></a>
+          <a href="#" className="hover:text-purple-400"><FaLinkedinIn /></a>
           <a href="#" className="hover:text-purple-400"><FaInstagram /></a>
         </div>
       </div>
