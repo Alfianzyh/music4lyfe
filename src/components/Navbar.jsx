@@ -32,10 +32,21 @@ const Navbar = ({ menuItems }) => {
 
         {/* Auth Buttons */}
         <div className="hidden md:flex items-center space-x-4">
-          <button className="text-white/80 text-base hover:text-white">Sign In</button>
-          <button className="bg-purple-600 text-white px-5 py-2 rounded-full hover:bg-purple-700 transition">
-            Sign Up
-          </button>
+          {/* Sign In Button */}
+          <div
+            data-property-1="Default"
+            className="w-[90px] h-[35px] flex items-center justify-center bg-white/10 rounded-full outline outline-1 outline-purple-600 cursor-pointer hover:bg-white/20 transition"
+          >
+            <span className="text-white text-[17px] font-medium">Sign In</span>
+          </div>
+
+          {/* Sign Up Button */}
+          <div
+            data-property-1="Default"
+            className="w-[90px] h-[35px] flex items-center justify-center bg-purple-600 text-white font-medium rounded-full cursor-pointer hover:bg-purple-700 transition"
+          >
+            <span className="text-[17px] font-medium">Sign Up</span>
+          </div>
         </div>
       </div>
     </header>
