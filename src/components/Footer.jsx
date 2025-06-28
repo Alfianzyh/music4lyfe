@@ -1,5 +1,6 @@
 import React from "react";
-import { FaGithub, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import SocialIcons from "./SocialIcons";
+import Logo from "./Logo"; 
 
 const Footer = () => {
   const linkSections = [
@@ -20,14 +21,14 @@ const Footer = () => {
   return (
     <footer className="border-t border-white/10 py-12 px-6 bg-black/0">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
-        {/* Logo + Description */}
+        
         <div>
-          <div className="flex items-center gap-2 mb-4">
-            <div className="w-6 h-6 bg-purple-400 rounded-sm" />
-            <h2 className="text-white text-2xl font-bold">GlassBeats</h2>
+          <div className="flex items-center gap-2 mb-1">
+            <Logo size={8} textSize="text-2xl" />
           </div>
           <p className="text-white/70 text-base">Experience music through glass.</p>
           {/* Optional icons can be added here */}
+            <SocialIcons />
         </div>
 
         {/* Link Sections */}
