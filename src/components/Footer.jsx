@@ -37,7 +37,7 @@ const Footer = () => {
             <h3 className="text-white font-semibold mb-4">{section.title}</h3>
             <ul className="space-y-2">
               {section.links.map((link, i) => (
-                <li key={i} className="text-white/70 hover:text-white transition text-base">
+                <li key={i} className="text-white/70 hover:text-white transition text-base cursor-pointer">
                   {link}
                 </li>
               ))}
