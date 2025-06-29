@@ -31,7 +31,7 @@ const DownloadSection = () => {
         <div className="relative mt-10 md:mt-0 md:ml-10">
           <div className="relative w-64 h-64">
             <img
-              src="/public/DownloadSection.png"
+              src="src/assets/DownloadSection.png"
               alt="App Mockup"
               className="w-64 h-64 rounded-xl relative z-10"
             />
