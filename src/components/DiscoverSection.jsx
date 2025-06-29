@@ -6,22 +6,22 @@ const DiscoverSection = () => {
     {
       title: "Electronic Vibes",
       tracks: 42,
-      image: "https://placehold.co/292x192",
+      image: "src/assets/Electronic.png",
     },
     {
       title: "Lo-Fi Beats",
       tracks: 95,
-      image: "https://placehold.co/292x192",
+      image: "src/assets/Lofi.png",
     },
     {
       title: "Ambient Chill",
       tracks: 37,
-      image: "https://placehold.co/292x192",
+      image: "src/assets/Ambient.png",
     },
     {
       title: "Indie Discoveries",
       tracks: 68,
-      image: "https://placehold.co/292x192",
+      image: "src/assets/Indie.png",
     },
   ];
 
