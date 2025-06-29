@@ -1,7 +1,7 @@
-// src/components/DownloadSection.jsx
 import React from "react";
 import { FaApple, FaGooglePlay, FaWindows, FaDesktop } from "react-icons/fa";
 import DownloadCard from "./DownloadCard";
+import DownloadMockup from "../assets/DownloadSection.png";
 
 const DownloadSection = () => {
   return (
@@ -31,7 +31,7 @@ const DownloadSection = () => {
         <div className="relative mt-10 md:mt-0 md:ml-10">
           <div className="relative w-64 h-64">
             <img
-              src="src/assets/DownloadSection.png"
+              src={DownloadMockup}
               alt="App Mockup"
               className="w-64 h-64 rounded-xl relative z-10"
             />
