@@ -49,12 +49,12 @@ const HeroSection = () => {
 
             <div className="relative">
               <img
-                src="./public/NowPlaying.png"
+                src="src/assets/NowPlaying.png"
                 alt="Now Playing"
                 className="rounded-xl"
               />
               <div className="absolute bottom-0 left-0 right-0 bg-black/30 rounded-b-xl p-4">
-                <p className="text-xl text-white font-bold">Better Dayas</p>
+                <p className="text-xl text-white font-bold">Better Days</p>
                 <p className="text-sm text-white/70">Purple Cat</p>
               </div>
             </div>
@@ -64,7 +64,7 @@ const HeroSection = () => {
               <span>0:51</span>
               <span>2:37</span>
             </div>
-            <div className="w-full h-1 bg-white/20 rounded-full mt-1 mb-6">
+            <div className="w-full h-1 bg-white rounded-full mt-1 mb-6">
               <div className="w-1/3 h-1 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full"></div>
             </div>
 
