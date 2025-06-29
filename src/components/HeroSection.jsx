@@ -15,8 +15,8 @@ const HeroSection = () => {
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 items-center gap-10 z-10 relative">
         {/* Left Side: Text & CTA */}
         <div className="space-y-6">
-          <h1 className="text-5xl font-bold leading-tight text-white">
-            Feel The Beat{" "}
+          <h1 className="text-6xl font-bold leading-tight text-white">
+            Feel The Beat,{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">
               <br></br>Live The Moment
             </span>
