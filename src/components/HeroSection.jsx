@@ -2,6 +2,7 @@ import PrimaryButton from "./PrimaryButton";
 import GhostButton from "./GhostButton";
 import { FaPlay, FaPause } from "react-icons/fa";
 import { TbPlayerSkipBackFilled, TbPlayerTrackPrevFilled, TbPlayerSkipForwardFilled, TbPlayerTrackNextFilled } from "react-icons/tb";
+import { BsThreeDotsVertical } from "react-icons/bs";
 
 const HeroSection = () => {
   return (
@@ -41,8 +42,9 @@ const HeroSection = () => {
               </div>
               <div>
                 <p className="text-base text-white font-semibold">Now Playing</p>
-                <p className="text-sm text-white/70">From your favorites</p>
+                <p className="text-sm text-white/70">From Lo-Fi Playlist</p>
               </div>
+              <BsThreeDotsVertical className="w-6 h-6 ml-8 text-white/70" />
             </div>
 
             <div className="relative">
