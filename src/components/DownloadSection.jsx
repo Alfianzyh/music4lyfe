@@ -36,7 +36,7 @@ const DownloadSection = () => {
               className="w-64 h-64 rounded-xl relative z-10"
             />
             <div className="absolute w-40 h-40 bg-purple-600 rounded-full opacity-30 -top-10 -left-10"></div>
-            <div className="absolute w-40 h-40 bg-blue-600 rounded-full opacity-30 top-28 left-28"></div>
+            <div className="absolute w-40 h-40 bg-blue-600 rounded-full opacity-30 top-32 left-32"></div>
           </div>
         </div>
       </div>
