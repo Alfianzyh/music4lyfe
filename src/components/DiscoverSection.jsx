@@ -34,7 +34,7 @@ const DiscoverSection = () => {
         </p>
       </div>
 
-      <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto">
+      <div className="mt-12 grid gap-6 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 max-w-6xl mx-auto cursor-pointer">
         {playlists.map((p, i) => (
           <PlaylistCard key={i} title={p.title} tracks={p.tracks} image={p.image} />
         ))}
