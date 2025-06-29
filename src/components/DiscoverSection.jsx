@@ -1,28 +1,16 @@
 import React from "react";
 import PlaylistCard from "./PlaylistCard";
+import Electronic from "../assets/Electronic.png";
+import Lofi from "../assets/Lofi.png";
+import Ambient from "../assets/Ambient.png";
+import Indie from "../assets/Indie.png";
 
 const DiscoverSection = () => {
   const playlists = [
-    {
-      title: "Electronic Vibes",
-      tracks: 42,
-      image: "src/assets/Electronic.png",
-    },
-    {
-      title: "Lo-Fi Beats",
-      tracks: 95,
-      image: "src/assets/Lofi.png",
-    },
-    {
-      title: "Ambient Chill",
-      tracks: 37,
-      image: "src/assets/Ambient.png",
-    },
-    {
-      title: "Indie Discoveries",
-      tracks: 68,
-      image: "src/assets/Indie.png",
-    },
+    { title: "Electronic Vibes", tracks: 42, image: Electronic },
+    { title: "Lo-Fi Beats", tracks: 95, image: Lofi },
+    { title: "Ambient Chill", tracks: 37, image: Ambient },
+    { title: "Indie Discoveries", tracks: 68, image: Indie },
   ];
 
   return (
