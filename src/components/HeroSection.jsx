@@ -1,6 +1,7 @@
 import PrimaryButton from "./PrimaryButton";
 import GhostButton from "./GhostButton";
 import { FaPlay, FaPause } from "react-icons/fa";
+import { TbPlayerSkipBackFilled, TbPlayerTrackPrevFilled, TbPlayerSkipForwardFilled, TbPlayerTrackNextFilled } from "react-icons/tb";
 
 const HeroSection = () => {
   return (
@@ -67,13 +68,13 @@ const HeroSection = () => {
 
             {/* Controls */}
             <div className="flex items-center justify-between">
-              <div className="w-4 h-4 bg-white/70 rounded-sm"></div>
-              <div className="w-5 h-5 bg-white/70 rounded-sm"></div>
+              <TbPlayerSkipBackFilled className="w-6 h-6 text-white/70 rounded-sm" />
+              <TbPlayerTrackPrevFilled className="w-7 h-7 text-white/70 rounded-sm" />
               <div className="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex justify-center items-center">
                 <FaPause className="w-5 h-5 text-white rounded-sm" />
               </div>
-              <div className="w-5 h-5 bg-white/70 rounded-sm"></div>
-              <div className="w-4 h-4 bg-white/70 rounded-sm"></div>
+              <TbPlayerTrackNextFilled className="w-7 h-7 text-white/70 rounded-sm" />
+              <TbPlayerSkipForwardFilled className="w-6 h-6 text-white/70 rounded-sm" />
             </div>
           </div>
         </div>
