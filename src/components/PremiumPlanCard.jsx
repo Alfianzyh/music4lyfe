@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCheckCircle } from "react-icons/fa";
 
 const PremiumPlanCard = ({ title, price, period, benefits, highlight, badge }) => {
   return (
@@ -16,7 +17,7 @@ const PremiumPlanCard = ({ title, price, period, benefits, highlight, badge }) =
       <ul className="mt-6 space-y-3 text-sm text-white/70">
         {benefits.map((b, i) => (
           <li key={i} className="flex items-start gap-2">
-            <span className="mt-1 w-2.5 h-2.5 bg-purple-400 rounded-full" />
+            <FaCheckCircle className="mt-0.5 w-4 h-4 text-purple-400 rounded-full" />
             {b}
           </li>
         ))}
