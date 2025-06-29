@@ -1,5 +1,6 @@
 import PrimaryButton from "./PrimaryButton";
 import GhostButton from "./GhostButton";
+import NowPlaying from "../assets/NowPlaying.png";
 import { FaPlay, FaPause } from "react-icons/fa";
 import { TbPlayerSkipBackFilled, TbPlayerTrackPrevFilled, TbPlayerSkipForwardFilled, TbPlayerTrackNextFilled } from "react-icons/tb";
 import { BsThreeDotsVertical } from "react-icons/bs";
@@ -49,7 +50,7 @@ const HeroSection = () => {
 
             <div className="relative">
               <img
-                src="src/assets/NowPlaying.png"
+                src={NowPlaying}
                 alt="Now Playing"
                 className="rounded-xl"
               />
