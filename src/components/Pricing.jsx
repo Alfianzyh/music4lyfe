@@ -1,5 +1,6 @@
 import React from "react";
 import PremiumPlanCard from "./PremiumPlanCard";
+import { FaCheck } from "react-icons/fa6";
 
 const Pricing = () => {
   const plans = [
@@ -38,20 +39,20 @@ const Pricing = () => {
             offline downloads, and exclusive content.
           </p>
           <ul className="space-y-3 text-white/70 text-base">
-            <li className="flex gap-2 items-start">
-              <span className="mt-1 w-2.5 h-2.5 bg-purple-400 rounded-full" />
+            <li className="flex gap-4 items-start">
+              <FaCheck className=" w-6 h-6 text-purple-400 " />
               Ad-free, uninterrupted listening experience
             </li>
-            <li className="flex gap-2 items-start">
-              <span className="mt-1 w-2.5 h-2.5 bg-purple-400 rounded-full" />
+            <li className="flex gap-4 items-start">
+              <FaCheck className=" w-6 h-6 text-purple-400 " />
               Download unlimited songs for offline enjoyment
             </li>
-            <li className="flex gap-2 items-start">
-              <span className="mt-1 w-2.5 h-2.5 bg-purple-400 rounded-full" />
+            <li className="flex gap-4 items-start">
+              <FaCheck className=" w-6 h-6 text-purple-400 " />
               Access to exclusive artist content and early releases
             </li>
-            <li className="flex gap-2 items-start">
-              <span className="mt-1 w-2.5 h-2.5 bg-purple-400 rounded-full" />
+            <li className="flex gap-4 items-start">
+              <FaCheck className=" w-6 h-6 text-purple-400 " />
               Higher audio quality with lossless streaming
             </li>
           </ul>
