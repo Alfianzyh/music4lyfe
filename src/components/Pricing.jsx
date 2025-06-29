@@ -35,7 +35,7 @@ const Pricing = () => {
         <div className="flex-1 space-y-6">
           <h2 className="text-4xl font-bold text-white">Upgrade to Premium</h2>
           <p className="text-white/70">
-            Unlock the full potential of GlassBeats with our Premium subscription. Enjoy ad-free listening,
+            Unlock the full potential of Music4Lyfe with our Premium subscription. Enjoy ad-free listening,
             offline downloads, and exclusive content.
           </p>
           <ul className="space-y-3 text-white/70 text-base">
