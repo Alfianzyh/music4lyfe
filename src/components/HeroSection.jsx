@@ -1,5 +1,6 @@
 import PrimaryButton from "./PrimaryButton";
 import GhostButton from "./GhostButton";
+import { FaPlay, FaPause } from "react-icons/fa";
 
 const HeroSection = () => {
   return (
@@ -35,7 +36,7 @@ const HeroSection = () => {
           <div className="w-[306px] bg-white/10 rounded-2xl shadow-xl backdrop-blur-md outline outline-1 outline-white/20 p-6 z-10">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex justify-center items-center">
-                <div className="w-3 h-3.5 bg-white rounded"></div>
+                <FaPlay className="pl-0.5 w-4 h-4 text-white" />
               </div>
               <div>
                 <p className="text-base text-white font-semibold">Now Playing</p>
@@ -69,7 +70,7 @@ const HeroSection = () => {
               <div className="w-4 h-4 bg-white/70 rounded-sm"></div>
               <div className="w-5 h-5 bg-white/70 rounded-sm"></div>
               <div className="w-14 h-14 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex justify-center items-center">
-                <div className="w-3 h-3.5 bg-white rounded-sm"></div>
+                <FaPause className="w-5 h-5 text-white rounded-sm" />
               </div>
               <div className="w-5 h-5 bg-white/70 rounded-sm"></div>
               <div className="w-4 h-4 bg-white/70 rounded-sm"></div>
