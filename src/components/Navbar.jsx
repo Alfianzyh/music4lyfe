@@ -5,7 +5,7 @@ const Navbar = ({ menuItems }) => {
   const scrollToSection = (id) => {
     const el = document.getElementById(id);
     if (el) {
-      const yOffset = -80; // offset agar tidak tertutup navbar
+      const yOffset = -80; 
       const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
       window.scrollTo({ top: y, behavior: "smooth" });
     }
@@ -14,7 +14,7 @@ const Navbar = ({ menuItems }) => {
   return (
     <header className="w-full px-6 py-4 fixed top-0 left-0 z-50 bg-black/25 backdrop-blur-md border-b border-white/10">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
-        {/* Reusable Logo */}
+
         <Logo size={8} textSize="text-2xl" />
 
         {/* Dynamic Menu */}
@@ -30,8 +30,8 @@ const Navbar = ({ menuItems }) => {
           ))}
         </nav>
 
-        {/* Auth Buttons */}
         <div className="hidden md:flex items-center space-x-4">
+          
           {/* Sign In Button */}
           <div
             data-property-1="Default"

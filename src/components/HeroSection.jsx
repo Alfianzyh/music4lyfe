@@ -31,7 +31,7 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Right Side: Player Mockup */}
+        {/* Right Side Mockup */}
         <div className="relative flex justify-center items-center">
           <div className="absolute w-64 h-64 -top-20 -left-10 bg-purple-600 rounded-full opacity-40"></div>
           <div className="absolute w-72 h-72 top-72 left-44 bg-blue-600 rounded-full opacity-30"></div>

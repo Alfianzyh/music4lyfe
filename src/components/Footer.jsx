@@ -27,7 +27,6 @@ const Footer = () => {
             <Logo size={8} textSize="text-2xl" />
           </div>
           <p className="text-white/70 text-base">Enjoy the beat, Live the moment</p>
-          {/* Optional icons can be added here */}
             <SocialIcons />
         </div>
 
