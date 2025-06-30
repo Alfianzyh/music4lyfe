@@ -65,7 +65,7 @@ const FeatureSection = () => {
           icon={<FaMobileAlt className="text-purple-300 w-8 h-8" />}
           title="Cross-Platform"
         >
-          Seamlessly sync your music across all devices — phone, tablet,
+          Seamlessly sync your music across all devices phone, tablet,
           computer, and smart speakers.
         </FeatureCard>
       </div>
