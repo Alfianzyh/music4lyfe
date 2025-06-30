@@ -1,5 +1,5 @@
 import React from "react";
-import { FaApple, FaGooglePlay, FaWindows, FaDesktop } from "react-icons/fa";
+import { FaApple, FaGooglePlay, FaWindows } from "react-icons/fa";
 import DownloadCard from "./DownloadCard";
 import DownloadMockup from "../assets/DownloadSection.png";
 
@@ -22,8 +22,8 @@ const DownloadSection = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
             <DownloadCard icon={<FaApple />} subtitle="Download on the" title="App Store" />
             <DownloadCard icon={<FaGooglePlay />} subtitle="Get it on" title="Google Play" />
-            <DownloadCard icon={<FaDesktop />} subtitle="Download for" title="Windows" />
-            <DownloadCard icon={<FaWindows />} subtitle="Download for" title="macOS" />
+            <DownloadCard icon={<FaApple />} subtitle="Download for" title="macOS" />
+            <DownloadCard icon={<FaWindows />} subtitle="Download for" title="Windows" />
           </div>
         </div>
 
