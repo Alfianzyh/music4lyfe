@@ -1,66 +1,70 @@
-# 🎵 Music4Lyfe - Landing Page Streaming Musik
+# 🎵 Music4Lyfe - Music Streaming Landing Page
 
-**Music4Lyfe** adalah landing page modern untuk platform streaming musik yang dikembangkan dengan **HTML**, **Tailwind CSS**, dan **JavaScript**. Website ini didesain dengan tampilan yang estetis, futuristik, dan sepenuhnya responsif untuk memberikan pengalaman pengguna terbaik di berbagai perangkat.
+**Music4Lyfe** is a modern landing page for a music streaming platform, built using **HTML**, **Tailwind CSS**, and **JavaScript**. This website is designed with an aesthetic and futuristic look, fully responsive to deliver the best user experience across all devices.
 
 🔗 Live Demo: [https://music4lyfe.vercel.app](https://music4lyfe.vercel.app)
 
 ---
 
-## 🚀 Cara Menjalankan Proyek
+## 🚀 Getting Started
 
-### 1. Clone repositori
+### 1. Clone the repository
+
 ```bash
 git clone https://github.com/username/carify.git
 cd carify
 ```
 
 ### 2. Install dependencies
+
 ```bash
 npm install
 ```
 
-### 3. Jalankan server development
+### 3. Start the development server
+
 ```bash
 npm run dev
 ```
+
 ---
 
-## ✨ Fitur Utama
+## ✨ Key Features
 
 🎤 **Hero Section**
 
-* Tampilan pembuka yang menarik dengan tagline dan tombol Call to Action (CTA)
+* Eye-catching opening section with tagline and Call to Action (CTA) button
 
 🎶 **About Section**
 
-* Penjelasan mengenai fitur dan keunggulan Music4Lyfe
+* Brief explanation of Music4Lyfe’s features and benefits
 
-📱 **Desain Responsif**
+📱 **Responsive Design**
 
-* Tampilan menyesuaikan untuk mobile, tablet, dan desktop
+* Optimized for mobile, tablet, and desktop viewports
 
-🎨 **Tampilan Estetik & Futuristik**
+🎨 **Aesthetic & Futuristic Look**
 
-* Menggunakan kombinasi warna modern dengan elemen visual yang mendukung brand musik
+* Uses a modern color palette and clean visuals to reflect a music-focused brand
 
 📥 **Call to Action**
 
-* Ajakan untuk mulai streaming musik dengan tombol yang interaktif
+* Engaging prompts to start exploring or streaming music
 
 ---
 
-## 🛠️ Teknologi
+## 🛠️ Technologies Used
 
 * HTML5
 * Tailwind CSS
 * JavaScript (optional interactivity)
-* Vercel (untuk deployment)
+* Vercel (for deployment)
 
 ---
 
-## 📄 Lisensi
+## 📄 License
 
-Proyek ini dibuat untuk keperluan edukasi dan pengembangan pribadi.
-Tidak diperuntukkan untuk penggunaan komersial tanpa izin.
+This project is intended for educational and personal development purposes only.
+Not intended for commercial use without permission.
 
 ---
