@@ -35,17 +35,21 @@ npm run dev
 
 * Eye-catching opening section with tagline and Call to Action (CTA) button
 
+
 🎶 **About Section**
 
 * Brief explanation of Music4Lyfe’s features and benefits
+  
 
 📱 **Responsive Design**
 
 * Optimized for mobile, tablet, and desktop viewports
+  
 
 🎨 **Aesthetic & Futuristic Look**
 
 * Uses a modern color palette and clean visuals to reflect a music-focused brand
+  
 
 📥 **Call to Action**
 
