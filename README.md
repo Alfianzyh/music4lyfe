@@ -1,6 +1,6 @@
 # 🎵 Music4Lyfe - Music Streaming Landing Page
 
-**Music4Lyfe** is a modern landing page for a music streaming platform, built using **HTML**, **Tailwind CSS**, and **JavaScript**. This website is designed with an aesthetic and futuristic look, fully responsive to deliver the best user experience across all devices.
+**Music4Lyfe** is a modern landing page for a music streaming platform, built using **React**, **Tailwind CSS**, and **JavaScript**. This website is designed with an aesthetic and futuristic look, fully responsive to deliver the best user experience across all devices.
 
 🔗 Live Demo: [https://music4lyfe.vercel.app](https://music4lyfe.vercel.app)
 
@@ -60,9 +60,8 @@ The app will run at `http://localhost:5173`
 
 ## 🛠️ Technologies Used
 
-* HTML5
+* React
 * Tailwind CSS
-* JavaScript (optional interactivity)
 * Vercel (for deployment)
 
 ---
