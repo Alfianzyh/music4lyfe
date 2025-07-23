@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Logo from "./Logo";
 import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Navbar = ({ menuItems }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,6 +15,39 @@ const Navbar = ({ menuItems }) => {
       setIsOpen(false); // tutup menu saat di mobile
     }
   };
+
+  <AnimatePresence>
+    {isOpen && (
+      <motion.div
+        key="mobile-menu"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{ opacity: 0, y: -10 }}
+        transition={{ duration: 0.2 }}
+        className="md:hidden mt-4 px-6 space-y-4"
+      >
+        {menuItems.map((item) => (
+          <button
+            key={item.id}
+            onClick={() => scrollToSection(item.id)}
+            className="block w-full text-left text-white/80 text-base font-medium hover:text-white transition"
+          >
+            {item.label}
+          </button>
+        ))}
+
+        {/* Auth Buttons in mobile */}
+        <div className="flex flex-col space-y-2 pt-4">
+          <div className="w-full h-[35px] flex items-center justify-center bg-white/10 rounded-full outline outline-1 outline-purple-600 hover:bg-white/20 transition">
+            <span className="text-white text-[17px] font-medium">Sign In</span>
+          </div>
+          <div className="w-full h-[35px] flex items-center justify-center bg-purple-600 text-white rounded-full hover:bg-purple-700 transition">
+            <span className="text-[17px] font-medium">Sign Up</span>
+          </div>
+        </div>
+      </motion.div>
+    )}
+  </AnimatePresence>
 
   return (
     <header className="w-full px-6 py-4 fixed top-0 left-0 z-50 bg-black/25 backdrop-blur-md border-b border-white/10">
