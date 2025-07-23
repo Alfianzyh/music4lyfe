@@ -1,3 +1,4 @@
+import React from "react";
 import PrimaryButton from "./PrimaryButton";
 import GhostButton from "./GhostButton";
 import NowPlaying from "../assets/NowPlaying.png";
@@ -9,18 +10,39 @@ import {
   TbPlayerTrackNextFilled,
 } from "react-icons/tb";
 import { BsThreeDotsVertical } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-r from-purple-900 via-blue-900 to-black py-24 px-6 sm:py-32 font-Poppins">
-      {/* Background Elements */}
-      <div className="absolute w-20 h-20 top-36 left-10 bg-white/10 border border-white/20 rounded-2xl"></div>
-      <div className="absolute w-16 h-16 bottom-10 right-10 bg-white/10 border border-white/20 rounded-full"></div>
-      <div className="absolute w-12 h-12 top-52 right-32 bg-white/10 border border-white/20 rounded-lg"></div>
+      {/* Background Elements with Animations */}
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.3 }}
+        className="absolute w-20 h-20 top-36 left-10 bg-white/10 border border-white/20 rounded-2xl"
+      />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.5 }}
+        className="absolute w-16 h-16 bottom-10 right-10 bg-white/10 border border-white/20 rounded-full"
+      />
+      <motion.div
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.6, delay: 0.7 }}
+        className="absolute w-12 h-12 top-52 right-32 bg-white/10 border border-white/20 rounded-lg"
+      />
 
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
-        {/* Left: Text */}
-        <div className="space-y-6">
+        {/* Left: Text with Animation */}
+        <motion.div
+          initial={{ opacity: 0, x: -50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+          className="space-y-6"
+        >
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight">
             Feel The Beat,
             <br />
@@ -29,19 +51,28 @@ const HeroSection = () => {
             </span>
           </h1>
           <p className="text-white/80 text-lg max-w-xl">
-            Built for music lovers, by music lovers. Stream, explore, and express yourself through sound. Because music isn’t just something you hear, it’s something you live.
+            Built for music lovers, by music lovers. Stream, explore, and
+            express yourself through sound. Because music isn’t just something
+            you hear, it’s something you live.
           </p>
           <div className="flex flex-wrap gap-4 pt-2">
             <PrimaryButton>Start Free Trial</PrimaryButton>
             <GhostButton>Download App</GhostButton>
           </div>
-        </div>
+        </motion.div>
 
-        {/* Right: Player Mockup */}
-        <div className="relative flex justify-center items-center">
+        {/* Right: Player Mockup with Animation */}
+        <motion.div
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.6, ease: "easeOut", delay: 0.2 }}
+          className="relative flex justify-center items-center"
+        >
+          {/* Decorative circles behind the player */}
           <div className="absolute w-64 h-64 -top-11 -left-10 bg-purple-600 rounded-full opacity-40"></div>
           <div className="absolute w-72 h-72 top-72 left-44 bg-blue-600 rounded-full opacity-30"></div>
 
+          {/* Player UI */}
           <div className="relative w-full max-w-[306px] bg-white/10 rounded-2xl shadow-xl backdrop-blur-md outline outline-1 outline-white/20 p-6 z-10">
             <div className="flex items-center gap-4 mb-6">
               <div className="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full flex justify-center items-center">
@@ -86,7 +117,7 @@ const HeroSection = () => {
               <TbPlayerSkipForwardFilled className="w-6 h-6 text-white/70" />
             </div>
           </div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
