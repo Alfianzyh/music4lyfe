@@ -1,6 +1,6 @@
 import React from "react";
-import PrimaryButton from "./PrimaryButton";
-import GhostButton from "./GhostButton";
+import PrimaryButton from "../components/PrimaryButton";
+import GhostButton from "../components/GhostButton";
 import NowPlaying from "../assets/NowPlaying.png";
 import { FaPlay, FaPause } from "react-icons/fa";
 import {

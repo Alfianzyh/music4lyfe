@@ -1,5 +1,5 @@
 import React from "react";
-import PremiumPlanCard from "./PremiumPlanCard";
+import PremiumPlanCard from "../components/PremiumPlanCard";
 import { FaCheck } from "react-icons/fa6";
 import { motion } from "framer-motion";
 

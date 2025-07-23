@@ -1,6 +1,6 @@
 import React from "react";
 import { FaApple, FaGooglePlay, FaWindows } from "react-icons/fa";
-import DownloadCard from "./DownloadCard";
+import DownloadCard from "../components/DownloadCard";
 import DownloadMockup from "../assets/DownloadSection.png";
 import { motion } from "framer-motion";
 

@@ -1,13 +1,13 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/HeroSection";
-import Features from "./components/FeatureSection";
-import Pricing from "./components/Pricing";
+import Hero from "./pages/HeroSection";
+import Features from "./pages/FeatureSection";
+import Pricing from "./pages/Pricing";
 import Footer from "./components/Footer";
 import Logo from "./components/Logo";
-import DownloadSection from "./components/DownloadSection";
-import HeroSection from "./components/HeroSection";
-import FeaturesSection from "./components/FeatureSection";
-import DiscoverSection from "./components/DiscoverSection";
+import DownloadSection from "./pages/DownloadSection";
+import HeroSection from "./pages/HeroSection";
+import FeaturesSection from "./pages/FeatureSection";
+import DiscoverSection from "./pages/DiscoverSection";
 
 function App() {
   return (

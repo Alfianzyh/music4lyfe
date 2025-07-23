@@ -1,5 +1,5 @@
 import React from "react";
-import PlaylistCard from "./PlaylistCard";
+import PlaylistCard from "../components/PlaylistCard";
 import Electronic from "../assets/Electronic.png";
 import Lofi from "../assets/Lofi.png";
 import Ambient from "../assets/Ambient.png";
